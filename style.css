@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    min-height: fit-content;
+}
+
+
+#header {
+    background-color: black;
+    color: bisque;
+    width: 100%;
+    text-align: center;
+}
+
+.firstLine {
+    display: none;
+    padding-top: 2px;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    top: -16px;
+    padding: 16px;
+    color: rgb(243, 1, 1);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    height: 9px;
+}
+
+
+.next {
+    position: absolute;
+    right: 0;
+}
+
+.prev {
+    position: absolute;
+    left: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(255, 217, 0, 0.8);
+}
+
+#nav {
+    background-color: rgb(255, 255, 255);
+    border: rgb(0, 0, 255) 2px solid;
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+#nav>ul {
+    display: inline-block;
+}
+
+#nav>ul>li {
+    list-style: none;
+    display: inline-block;
+}
+
+#nav>ul>li>a {
+    text-decoration: none;
+    font-size: 24px;
+    padding: 20px 60px;
+    height: fit-content;
+}
+
+#nav>span>a>i {
+    font-size: 25px;
+    padding: 20px 40px;
+}
+
+span>a>i:hover,
+#nav>ul>li>a:hover {
+    background-color: blue;
+    color: bisque;
+}
+
+.slideshow-container {
+    margin-top: -5px;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: 700px;
+}
+
+#footer {
+    background-image: url(./images/footer.avif);
+    background-size: cover;
+    text-align: left;
+    margin-top: -4px;
+    overflow: hidden;
+}
+
+#footer>div {
+    display: flex;
+    justify-content: space-between
+}
+
+
+#footer>div>h1 {
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 10px;
+}
+
+
+
+#footer>div>h1>a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 23px 0px 0px 0px;
+    font-size: 20px;
+}
+
+#footer>p#title {
+    padding-left: 10px;
+    font-size: 49px;
+}
+
+div>i {
+    padding: 20px;
+    font-size: 30px;
+}
+
+.lastLine {
+    height: 20px;
+    padding: 10px;
+    float: right;
+    color: beige;
+}
